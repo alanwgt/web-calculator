@@ -1,0 +1,4 @@
+.box {
+    border-radius: var(--radius);
+    background-color: var(--background-color);
+}

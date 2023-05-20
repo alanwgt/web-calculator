@@ -1,0 +1,10 @@
+.surface {
+    border-radius: var(--shape-corner-large);
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+
+    &.variant {
+        background-color: var(--color-surface-variant);
+        color: var(--color-on-surface-variant);
+    }
+}

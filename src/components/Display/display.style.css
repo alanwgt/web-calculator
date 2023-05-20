@@ -1,0 +1,24 @@
+.display {
+    position: relative;
+    font-size: 5.5vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    margin-bottom: var(--margin-sz);
+    padding: 0 var(--margin-sz);
+    height: 25vh;
+
+    .error {
+        color: var(--color-on-error);
+        background-color: var(--color-error);
+        font-size: var(--text-md);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+    }
+}

@@ -1,0 +1,35 @@
+.keypad-container {
+    height: calc(75vh - var(--margin-sz) * 3);
+}
+
+.keypad {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    //gap: 2vw;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 768px) {
+        gap: 1vw;
+    }
+}
+
+.keypad-button {
+    height: fit-content;
+    border-radius: 50% !important;
+    font-size: min(5vw, 5rem);
+    font-weight: bold;
+    aspect-ratio: 1;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+        font-size: min(10vw, 2rem);
+        //width: 8vw;
+    }
+
+    @media screen and (min-width: 1024px) {
+        font-size: 5vw;
+    }
+}

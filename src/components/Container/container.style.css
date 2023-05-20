@@ -1,0 +1,16 @@
+.container {
+    background-color: var(--color-primary-container);
+    color: var(--color-on-primary-container);
+    border-radius: var(--shape-corner-large);
+    padding: var(--margin-sz);
+
+    &.secondary {
+        background-color: var(--color-secondary-container);
+        color: var(--color-on-secondary-container);
+    }
+
+    &.tertiary {
+        background-color: var(--color-tertiary-container);
+        color: var(--color-on-tertiary-container);
+    }
+}

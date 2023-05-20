@@ -1,0 +1,82 @@
+:root {
+    --button-background-transition: background-color 0.2s ease-in-out 0s;
+}
+
+.button {
+    &:hover:not(.disabled) {
+        background-color: color-mix(in srgb,var(--button-background),#000 20%);
+        color: color-mix(in srgb,var(--button-color),#212121 30%);
+    }
+
+    --button-color: var(--color-primary);
+    --button-background: var(--color-surface);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--button-background);
+    color: var(--button-color);
+    height: 40px;
+    padding: 0 24px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    gap: 8px;
+    white-space: nowrap;
+    letter-spacing: 0.10000000149011612px;
+    transition: box-shadow 0.2s ease-in-out 0s,
+    var(--button-background-transition);
+    line-height: 20px;
+
+    &.filled {
+        --button-color: var(--color-on-primary);
+        --button-background: var(--color-primary);
+    }
+
+    &.filled-secondary {
+        --button-color: var(--color-on-secundary);
+        --button-background: var(--color-secondary);
+    }
+
+    &.filled-tertiary {
+        --button-color: var(--color-on-tertiary);
+        --button-background: var(--color-tertiary);
+    }
+
+    &.outlined {
+        border: 1px solid var(--color-outline);
+    }
+
+    &.text {
+        --button-background: transparent;
+        --button-color: var(--color-primary);
+    }
+
+    &.filled-tonal {
+        --button-background: var(--color-secondary-container);
+        --button-color: var(--color-on-secondary-container);
+        &:hover {
+            box-shadow: var(--elevation-1);
+        }
+    }
+
+    &.error {
+        --button-background: var(--color-error);
+        --button-color: var(--color-on-error);
+    }
+
+    &.icon {
+        @extend .button.filled-tertiary;
+        padding: .75rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    &.disabled {
+        --button-background: var(--color-disabled);
+        --button-color: var(--black);
+    }
+}

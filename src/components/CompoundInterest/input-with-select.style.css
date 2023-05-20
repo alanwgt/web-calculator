@@ -1,0 +1,17 @@
+.input-with-select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    gap: var(--margin-sz);
+
+    & > * {
+        width: 100%;
+    }
+
+    .select {
+        width: 25%;
+    }
+}

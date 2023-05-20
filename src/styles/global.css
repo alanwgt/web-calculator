@@ -1,0 +1,144 @@
+:root {
+    --margin-sz: 20px;
+    --typescale-body-large-size: 16px;
+    --shape-corner-large: 16px 16px 16px 16px;
+    --shape-corner-extra-large: 24px 24px 24px 24px;
+    --shape-corner-extra-large-top: 28px 28px 0px 0px;
+    --shape-corner-medium-top: 8px 8px 0px 0px;
+    --shape-corner-small-top: 4px 4px 0px 0px;
+    --shape-corner-medium: 8px 8px 8px 8px;
+    --shape-corner-small: 4px 4px 4px 4px;
+    --shape-corner-extra-small: 2px 2px 2px 2px;
+    --shape-corner-none: 0px 0px 0px 0px;
+
+    --elevation-0: 0px 0px 0px 0px rgb(var(--color-shadow-rgb) / 0.2), 0px 0px 0px 0px rgb(var(--color-shadow-rgb) / 0.14), 0px 0px 0px 0px rgb(var(--color-shadow-rgb) / 0.12);
+    --elevation-1: 0px 3px 1px -2px rgb(var(--color-shadow-rgb) /          0.2), 0px 2px 2px 0px rgb(var(--color-shadow-rgb) / 0.14), 0px 1px 5px 0px rgb(var(--color-shadow-rgb) / 0.12);
+    --elevation-2: 0px 2px 4px -1px rgb(var(--color-shadow-rgb) /          0.2), 0px 4px 5px 0px rgb(var(--color-shadow-rgb) / 0.14), 0px 1px 10px 0px rgb(var(--color-shadow-rgb) / 0.12);
+    --elevation-3: 0px 5px 5px -3px rgb(var(--color-shadow-rgb) /          0.2), 0px 8px 10px 1px rgb(var(--color-shadow-rgb) / 0.14), 0px 3px 14px 2px rgb(var(--color-shadow-rgb) / 0.12);
+    --elevation-4: 0px 5px 5px -3px rgb(var(--color-shadow-rgb) /          0.2), 0px 8px 10px 1px rgb(var(--color-shadow-rgb) / 0.14), 0px 3px 14px 2px rgb(var(--color-shadow-rgb) / 0.12);
+    --elevation-5: 0px 8px 10px -6px rgb(var(--color-shadow-rgb) /          0.2), 0px 16px 24px 2px rgb(var(--color-shadow-rgb) / 0.14), 0px 6px 30px 5px rgb(var(--color-shadow-rgb) / 0.12);
+
+    --color-shadow: #000000;
+    --color-shadow-rgb: 0 0 0;
+
+    --color-primary: #744b9f;
+    --color-on-primary: #ffffff;
+    --color-primary-container: #efdbff;
+    --color-on-primary-container: #2b0052;
+
+
+    --color-secondary: #655a6f;
+    --color-on-secundary: #ffffff;
+    --color-secondary-container: #edddf6;
+    --color-on-secondary-container: #21182a;
+
+
+    --color-tertiary: #87458a;
+    --color-on-tertiary: #ffffff;
+    --color-tertiary-container: #ffd6fb;
+    --color-on-tertiary-container: #36003d;
+
+    --color-error: #ba1a1a;
+    --color-on-error: #ffffff;
+    --color-error-container: #ffdad6;
+    --color-on-error-container: #410002;
+
+    --color-background: #fffbff;
+    --color-on-background: #1d1b1e;
+    --color-surface: #fffbff;
+    --color-on-surface: #1d1b1e;
+    --color-surface-variant: #e9e0eb;
+    --color-on-surface-variant: #4a454e;
+
+    --color-outline: #7b757e;
+
+    --black: #1D1B1B;
+    --white: #FFFFFF;
+    --gray-0: #EAE7DB;
+    --gray-1: #D3D3D3;
+    --danger: #FF0000;
+    --success: #00FF00;
+    --warning: #FFA500;
+    --info: #00FFFF;
+    --color-disabled: #9F9F9F;
+
+    --radius: 0.25rem;
+    --spacing: 0.75rem;
+    --padding: var(--spacing);
+
+    --background-color: var(--black);
+
+    --text-color: var(--black);
+    --text-dimmed: var(--gray-1);
+
+    --text-xxs: 0.5rem;
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-md: 1rem;
+    --text-lg: 1.25rem;
+    --text-xl: 1.5rem;
+
+    --media-sm: 576px;
+    --media-md: 768px;
+    --media-lg: 992px;
+
+}
+
+
+body[data-theme="dark"] {
+    --color-primary: #dcb8ff;
+    --color-on-primary: #43196d;
+    --color-primary-container: #5b3385;
+    --color-on-primary-container: #efdbff;
+
+
+    --color-secondary: #d0c1da;
+    --color-on-secundary: #362d3f;
+    --color-secondary-container: #4d4357;
+    --color-on-secondary-container: #edddf6;
+
+
+    --color-tertiary: #f9acfa;
+    --color-on-tertiary: #521458;
+    --color-tertiary-container: #6c2d71;
+    --color-on-tertiary-container: #ffd6fb;
+
+    --color-error: #ffb4ab;
+    --color-on-error: #690005;
+    --color-error-container: #93000a;
+    --color-on-error-container: #ffdad6;
+
+    --color-background: #1d1b1e;
+    --color-on-background: #e7e1e5;
+    --color-surface: #1d1b1e;
+    --color-on-surface: #e7e1e5;
+    --color-surface-variant: #4a454e;
+    --color-on-surface-variant: #ccc4cf;
+
+    --color-outline: #968e98;
+}
+
+* {
+    font-family: 'Roboto Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: var(--color-background);
+    height: 100%;
+    padding: var(--shape-corner-large)
+}
+
+#root {
+    height: 100%;
+}
+

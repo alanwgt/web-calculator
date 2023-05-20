@@ -1,0 +1,7 @@
+.actions {
+    margin-bottom: var(--margin-sz);
+    display: flex;
+    justify-content: flex-start;
+    gap: var(--margin-sz);
+    padding: calc(var(--margin-sz) / 2);
+}

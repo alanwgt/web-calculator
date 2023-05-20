@@ -1,0 +1,29 @@
+.select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    > select {
+        width: 100%;
+        border-radius: var(--shape-corner-medium-top);
+        padding: 12px 10px;
+        border: none;
+        background-color: var(--color-surface);
+        color: var(--color-on-surface);
+        box-sizing: border-box;
+        border-bottom: 3px solid var(--color-surface);
+
+        &:focus {
+            outline: none;
+            border-bottom: 3px solid var(--color-primary);
+        }
+
+        > option {
+            color: var(--color-on-surface);
+            &:hover {
+                background-color: var(--color-primary) !important;
+                color: var(--color-on-primary) !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.result {
+    margin-top: var(--margin-sz);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        &:not(:last-child) {
+            margin-bottom: var(--margin-sz);
+        }
+    }
+
+    .label {
+        font-size: var(--text-sm);
+        color: var(--color-primary);
+    }
+
+    .value {
+        font-size: var(--text-lg);
+        font-weight: bold;
+        color: var(--color-primary);
+    }
+}
